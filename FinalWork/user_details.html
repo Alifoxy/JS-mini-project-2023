@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>User Details</title>
+</head>
+<body>
+<script>
+    let url = new URL(location.href);
+    console.log(url);
+    let id = url.searchParams.get('id');
+    console.log(id);
+
+    fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+        .then(info => info.json())
+        .then(info => {
+
+            let main_div2 = document.createElement('div');
+            main_div2.setAttribute('class','main2');
+            document.body.appendChild(main_div2);
+
+            let inner_div2 = document.createElement('div');
+            inner_div2.setAttribute('class','inf');
+
+            let inner_div3 = document.createElement('div');
+            inner_div3.setAttribute('class','inf2');
+
+            let heading = document.createElement('h3');
+            heading.innerText = 'user info';
+            heading.setAttribute('class','hd')
+            main_div2.append(heading, inner_div2, inner_div3);
+
+            for (const item in info) {
+                let div = document.createElement('div');
+                if (typeof info[item] !== 'object') {
+                    div.innerText = `${item} ${info[item]}`;
+                } else {
+                    div.innerText = `${item} :`
+
+                    for (const inn_item in info[item]) {
+                        let in_div = document.createElement('div');
+
+                        if (typeof info[item][inn_item] !== 'object') {
+                            in_div.innerText = `${inn_item} ${info[item][inn_item]}`;
+                        } else {
+                            in_div.innerText = `${inn_item} :`
+
+                            for (const elem in info[item][inn_item]) {
+                                let in_div2 = document.createElement('div');
+
+                                if (typeof info[item][inn_item][elem] !== 'object') {
+                                    in_div2.innerText = `${elem} ${info[item][inn_item][elem]}`;
+                                }
+                                in_div.appendChild(in_div2);
+                            }
+                        }
+                        div.appendChild(in_div);
+                    }
+                }
+                inner_div2.append(div);
+            }
+
+            let btn_div = document.createElement('div');
+            inner_div3.appendChild(btn_div);
+
+            let show_post_title = document.createElement('button');
+            show_post_title.innerText = 'posts of current user';
+            show_post_title.setAttribute('class','p_btn');
+            btn_div.appendChild(show_post_title);
+
+            show_post_title.onclick = function () {
+                fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
+                    .then(posts_info => posts_info.json())
+                    .then(posts => {
+                        let all_posts_div = document.createElement('div');
+                        all_posts_div.setAttribute('class','apd');
+                        inner_div3.appendChild(all_posts_div);
+
+                        for (const post of posts) {
+                            let post_div = document.createElement('div');
+                            post_div.setAttribute('class','p_div')
+                            post_div.innerText = `${post.title}  ` ;
+                            let det_div = document.createElement('div');
+                            let ap = document.createElement('a');
+                            ap.innerText ='post details';
+                            ap.href = `post_details.html?post_id=${post.id}`;
+                            det_div.appendChild(ap);
+                            post_div.appendChild(det_div);
+                            all_posts_div.appendChild(post_div);
+
+                        }
+
+                    });
+                show_post_title.disabled = true;
+            }
+        });
+
+</script>
+</body>
+</html>

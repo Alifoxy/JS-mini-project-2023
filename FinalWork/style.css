@@ -1,0 +1,169 @@
+.main1{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-evenly;
+    width: 840px;
+    height: 450px;
+    padding-top: 20px;
+    background: darkslateblue;
+    color: darkslategray;
+    font-family: "Book Antiqua", sans-serif ;
+    font-size: 15px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border-style: dashed;
+    border-color: powderblue;
+    border-width: 5px;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.user_ul{
+    list-style-type: none;
+}
+.u_btn{
+    background-color: cornflowerblue;
+    width: 120px;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 0;
+    font-size: 15px;
+}
+.inn_div {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 140px;
+    box-sizing: border-box;
+    width: 400px;
+    height: 75px;
+    font-family: "Book Antiqua", sans-serif ;
+    color: darkslategray;
+    background: powderblue;
+    border-radius: 50px;
+}
+.main2{
+    box-sizing: border-box;
+    width: 1260px;
+    height: auto;
+    padding: 10px;
+    background: lightblue;
+    color: darkslategray;
+    font-family: "Book Antiqua", sans-serif ;
+    border-radius: 30px;
+    border-style: dashed;
+    border-color: lightcyan;
+    border-width: 5px;
+}
+.inf{
+    box-sizing: border-box;
+    padding: 10px 20px 0 20px;
+}
+
+.hd {
+    font-family: "Cinzel Black", sans-serif ;
+    font-size: large;
+    box-sizing: border-box;
+    padding: 0 20px 0 20px;
+}
+
+.inf2 {
+    width: 1220px;
+    box-sizing: border-box;
+    margin: 20px 5px 20px 5px;
+    padding: 10px;
+    background: lightcyan;
+    border-radius: 30px;
+}
+
+.apd {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 280px;
+    width: 1200px;
+    box-sizing: border-box;
+}
+
+.p_btn {
+    width: 1200px;
+    height: 40px;
+    color: darkslategray;
+    font-family: "Cinzel Black", sans-serif ;
+    background-color: lightsteelblue;
+    border-radius: 20px;
+    border: 0;
+    font-size: large;
+
+}
+.p_div {
+    padding: 15px;
+    margin: 5px;
+    width: 230px;
+    height: 130px;
+    box-sizing: border-box;
+    background: paleturquoise;
+    border-radius: 30px;
+    text-align: match-parent;
+}
+.main3 {
+    width: 1220px;
+    height: auto;
+    padding: 10px;
+    background: lavender;
+    color: midnightblue;
+    font-family: "Book Antiqua", sans-serif ;
+    border-radius: 30px;
+    border-style: dashed;
+    border-color: mediumorchid;
+    border-width: 5px;
+}
+.inf3 {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: 20px 10px 20px 10px;
+    background-color: #e5c7e5;
+    border-radius: 30px;
+}
+.inf4{
+    width: auto;
+    height: auto;
+    margin: 0 10px 20px 10px;
+    padding: 10px;
+    background-color: lightsteelblue;
+    border-radius: 30px;
+}
+
+.dod {
+    padding: 10px;
+    border-radius: 30px;
+    border-style: dashed;
+    border-color:mediumorchid;
+    border-width: 5px;
+}
+
+.coms_d {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.com_d {
+    font-size: 12px;
+    display: flex;
+    width: 220px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px 10px 20px 10px;
+    border-radius: 30px;
+    background-color: azure;
+
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
