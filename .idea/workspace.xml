@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="234e42c1-3eac-45f8-b81d-b150ef973df3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalWork/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalWork/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalWork/post_details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalWork/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalWork/user_details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS-mini-project-2023.iml" afterDir="false" />
-    </list>
+    <list default="true" id="234e42c1-3eac-45f8-b81d-b150ef973df3" name="Changes" comment="ready mini project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,8 +51,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705406820163</updated>
-      <workItem from="1705406821575" duration="3362000" />
+      <workItem from="1705406821575" duration="3730000" />
     </task>
+    <task id="LOCAL-00001" summary="ready mini project">
+      <created>1705412549902</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705412549902</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -71,5 +68,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="ready mini project" />
+    <option name="LAST_COMMIT_MESSAGE" value="ready mini project" />
   </component>
 </project>
